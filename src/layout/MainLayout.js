@@ -11,10 +11,10 @@ const MainLayout = ({children}) => {
             <div className="min-h-full">
 
                 {
-                    (router.asPath === "/login") 
+                    (router.asPath === "/" || router.asPath === '/login') 
                         ? null
                         : <Header />  
-                    }
+                }
                 <Nav /> 
 
                 <main>
